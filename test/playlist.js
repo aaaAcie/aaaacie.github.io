@@ -1,17 +1,17 @@
 
 window.onload = init;
-function init(){
+function init() {
   var button = document.getElementById("addButton");
   button.onclick = handleButtonClick;
 }
 
-function handleButtonClick(e){
+function handleButtonClick(e) {
   var textInput = document.getElementById("songTextInput");
   var songName = textInput.value;
   if (songName == "") {
-		alert("Please enter a song");
+	alert("Please enter a song");
   }
-  else{
+  else {
     // 希望创建的元素类型 "li"
     var li = document.createElement("li"); 
     // 把这个元素的内容设置为歌名
