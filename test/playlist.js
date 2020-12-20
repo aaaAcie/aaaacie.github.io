@@ -1,7 +1,11 @@
-var button = document.getElementById("addButton");
-button.clicked = handleButtonClicked();
 
-function handleButtonClicked(){
+window.onload = init;
+function init(){
+  var button = document.getElementById("addButton");
+  button.onclick = handleButtonClick;
+}
+
+function handleButtonClick(){
   var textInput = document.getElementById("songTextInput");
   var songName = textInput.value;
   // 希望创建的元素类型 "li"
